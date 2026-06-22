@@ -1,6 +1,6 @@
-from stable_baselines3 import PPO
+from stable_baselines3 import PPO # type: ignore
 from angle_cartpole import AngleCartPoleEnv
-from stable_baselines3.common.monitor import Monitor
+from stable_baselines3.common.monitor import Monitor # type: ignore
 import os
 env = Monitor(AngleCartPoleEnv(),filename="logs/angle")
 
